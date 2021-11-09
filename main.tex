@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{booktabs}
+\usepackage[labelfont=bf, skip=5pt, font =small]{caption}
+\usepackage{subcaption}
+\usepackage{tabu}
+\usepackage[style=chem-acs, articletitle = true]{biblatex}
+\usepackage[siunitx]{circuitikz}
+
+\addbibresource{references.bib}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+
+\begin{document}
+
+\begin{figure}[!t]
+    \centering
+     \includegraphics[width=\textwidth]{polito_logo_2021_blu.jpeg}
+     \label{fig:logo_polito}
+\end{figure}
+\begin{center}
+    \huge{Laboratorio 1: Oscilloscopio Digitale}\\[10pt]
+    \large{Relazione a cura di:
+    \\Viorel Strogoteanu\\Luigi Tatonetti\\Michele\\Giovanni Lombardi}
+\end{center}
+
+
+\rule{\textwidth}{0.5pt}
+
+
+    \noindent Obiettivi del lab: continua\\
+\rule{\textwidth}{0.5pt}
+
+\section{Cenni teorici}
+    \subsection{Incertezze di tipo B}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    \subsection{Schema di massima DSO}
+    \subsection{Tempo di salita}
+        Il tempo di salita é il tempo che il segnale impiega per passare dal livello 10% al livello 90% .
+        
+\section{Apparecchiature}
+
+\section{Prima parte}
+\subsection{Misurazione valor efficace}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    
+\begin{circuitikz}\draw
+(0,0) to[european voltage source, l_=$V_g$] (0,4)
+      to[R, l_=$R_g$](4,4)
+      to[C, l_=$C_s$](5,4) -- (6,4)
+      to[C, l_=$C_c$](6,3) --(6,0)
+(6,0) -- (0,0)
+    
+;
+\end{circuitikz}
+
+\subsection{Verifica con multimetro}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    See table \ref{tab:people}
+    
+\section{Seconda parte}
+\subsection{Misurazione tempo di salita}
+\subsection{Misurazione tempo di salita con sonda compensata}
+
+\section{Terza parte : Aliasing}
+\subsection{Aliasing percettivo}
+    
+\section{Conclusioni}
+    Esempio di circuito blablalblblalsakjshskahdhjsabjhdbvasubdasjldihaskfgash
+    
+    
+\end{document}
