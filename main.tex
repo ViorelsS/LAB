@@ -7,6 +7,7 @@
 \usepackage{tabu}
 \usepackage[style=chem-acs, articletitle = true]{biblatex}
 \usepackage[siunitx]{circuitikz}
+\usepackage{amsmath, amssymb,amsfonts}
 
 \addbibresource{references.bib}
 
@@ -27,52 +28,59 @@
 \begin{center}
     \huge{Laboratorio 1: Oscilloscopio Digitale}\\[10pt]
     \large{Relazione a cura di:
-    \\Viorel Strogoteanu\\Luigi Tatonetti\\Michele\\Giovanni Lombardi}
+    \\Viorel Strogoteanu\\Luigi Tatonetti\\Michele Pettiti\\Giovanni Lombardi}
 \end{center}
 
 
 \rule{\textwidth}{0.5pt}
 
 
-    \noindent Obiettivi del lab: continua\\
+    \noindent Obiettivi del laboratorio: \\
 \rule{\textwidth}{0.5pt}
 
-\section{Cenni teorici}
-    \subsection{Incertezze di tipo B}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    \subsection{Schema di massima DSO}
-    \subsection{Tempo di salita}
-        Il tempo di salita é il tempo che il segnale impiega per passare dal livello 10% al livello 90% .
-        
-\section{Apparecchiature}
+\section{Valore efficace e frequenza}
+    \subsection{Operazioni preliminari}
 
-\section{Prima parte}
-\subsection{Misurazione valor efficace}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    
-\begin{circuitikz}\draw
+\subsubsection{Cenni teorici}
+                \begin{circuitikz}\draw
 (0,0) to[european voltage source, l_=$V_g$] (0,4)
       to[R, l_=$R_g$](4,4)
       to[C, l_=$C_s$](5,4) -- (6,4)
-      to[C, l_=$C_c$](6,3) --(6,0)
+      to[C, l_=$C_c$](6,1) --(6,0)
 (6,0) -- (0,0)
     
 ;
 \end{circuitikz}
+\subsection{Misurazione valor efficace}
+   $V_{pp} = 1.000 $ V
+   
+   
 
-\subsection{Verifica con multimetro}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    See table \ref{tab:people}
+$\dfrac{\delta{\text{$V_{pp}$}}}{\text{$V_{pp}$}}$=$
+$\dfrac{\delta{\text{$nDIV$}}}{\text{$nDIV$}}$ + \dfrac{\delta{\text{$S_v$}}}{\text{$S_v$}}$ = 4\% + 3\% = \pm 7\%
+ 
+$\delta{\text{$V_{pp}$}} = 0.07 $ V
+
+$V_{eff} $= $$\dfrac{\delta{\text{$v_{max}$}}}{\text{$\sqrt{2}$}$
+
     
-\section{Seconda parte}
-\subsection{Misurazione tempo di salita}
-\subsection{Misurazione tempo di salita con sonda compensata}
 
-\section{Terza parte : Aliasing}
+
+\subsection{Misurazione di frequenza}
+\subsection{Verifica con multimetro}
+    
+\section{Misurazione del tempo di salita}
+\subsection{Operazioni preliminari}
+\subsection{Misurazione 1: tempo di salita in condizioni di adattamento di impedenza}
+\subsection{Misurazione 2: tempo di salita con generatore di alta impedenza(uso della sonda compensata)}
+
+\section{Aliasing}
+\subsection{Operazioni preliminari e visualizzazione in assenza di aliasing}
 \subsection{Aliasing percettivo}
+\subsection{Effetto dell'aliasing nel dominio del tempo}
     
 \section{Conclusioni}
-    Esempio di circuito blablalblblalsakjshskahdhjsabjhdbvasubdasjldihaskfgash
+    
     
     
 \end{document}
